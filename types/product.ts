@@ -13,6 +13,7 @@ export type BrandId =
 export interface Brand {
   id: BrandId;
   name: string;
+  image: string;
 }
 
 export interface Product {

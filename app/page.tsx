@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { brands } from "@/data/brands";
 import { products } from "@/data/products";
@@ -29,15 +30,20 @@ export default function Home() {
               <Link
                 key={brand.id}
                 href={`/marques/${brand.id}`}
-                className="group relative flex flex-col items-center justify-center gap-4 rounded-2xl border border-zinc-800 bg-zinc-900 px-6 py-10 text-center transition-colors hover:border-zinc-600 hover:bg-zinc-900/70"
+                className="group relative flex aspect-[4/3] flex-col items-center justify-center overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 text-center transition-colors hover:border-zinc-600"
               >
+                <Image
+                  src={brand.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/55 transition-colors duration-300 group-hover:bg-black/45" />
                 <span className="absolute right-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-zinc-950">
                   {count} article{count > 1 ? "s" : ""}
                 </span>
-                <span className="flex h-14 w-14 items-center justify-center rounded-full border border-zinc-700 text-lg font-semibold text-zinc-200 transition-colors group-hover:border-zinc-500 group-hover:text-white">
-                  {brand.name.charAt(0)}
-                </span>
-                <span className="text-sm font-medium uppercase tracking-wide text-zinc-100 sm:text-base">
+                <span className="relative text-lg font-semibold uppercase tracking-[0.15em] text-white drop-shadow-sm sm:text-xl">
                   {brand.name}
                 </span>
               </Link>
