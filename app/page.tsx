@@ -7,6 +7,7 @@ import Header, { type CategoryOption } from "@/components/Header";
 import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
 import CartDrawer from "@/components/CartDrawer";
+import CustomSourcing from "@/components/CustomSourcing";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
@@ -14,7 +15,7 @@ const CATEGORIES: CategoryOption[] = [
   { label: "Tous", value: "tous" },
   { label: "Vestes", value: "vestes" },
   { label: "Sweats", value: "sweats" },
-  { label: "Sneakers", value: "sneakers" },
+  { label: "Pantalons", value: "pantalons" },
   { label: "Accessoires", value: "accessoires" },
 ];
 
@@ -46,6 +47,8 @@ export default function Home() {
             <ProductCard key={product.id} product={product} onSelect={setSelectedProduct} />
           ))}
         </section>
+
+        <CustomSourcing />
 
         <FAQ />
       </main>
