@@ -1,27 +1,18 @@
 "use client";
 
+import Link from "next/link";
 import { useCart } from "@/context/CartContext";
-import type { ProductCategory } from "@/types/product";
 
-export interface CategoryOption {
-  label: string;
-  value: ProductCategory | "tous";
-}
-
-interface HeaderProps {
-  categories: CategoryOption[];
-  activeCategory: ProductCategory | "tous";
-  onCategoryChange: (category: ProductCategory | "tous") => void;
-}
-
-export default function Header({ categories, activeCategory, onCategoryChange }: HeaderProps) {
+export default function Header() {
   const { itemCount, openCart } = useCart();
 
   return (
     <header className="sticky top-0 z-30 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <span className="text-lg font-semibold tracking-[0.3em] text-white">NOIR</span>
+          <Link href="/" className="text-lg font-semibold tracking-[0.3em] text-white">
+            NOIR
+          </Link>
           <button
             type="button"
             onClick={openCart}
@@ -49,25 +40,6 @@ export default function Header({ categories, activeCategory, onCategoryChange }:
             )}
           </button>
         </div>
-        <nav className="scrollbar-none -mt-1 flex gap-2 overflow-x-auto pb-4">
-          {categories.map((category) => {
-            const isActive = activeCategory === category.value;
-            return (
-              <button
-                key={category.value}
-                type="button"
-                onClick={() => onCategoryChange(category.value)}
-                className={`shrink-0 rounded-full border px-4 py-1.5 text-xs font-medium uppercase tracking-wide transition-colors ${
-                  isActive
-                    ? "border-white bg-white text-zinc-950"
-                    : "border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-white"
-                }`}
-              >
-                {category.label}
-              </button>
-            );
-          })}
-        </nav>
       </div>
     </header>
   );
