@@ -4,8 +4,22 @@ import { useMemo } from "react";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 
+const FREE_SHIPPING_THRESHOLD = 60;
+const SHIPPING_COST = 4.9;
+
+function formatPrice(value: number) {
+  return value.toLocaleString("fr-FR", {
+    minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
+    maximumFractionDigits: 2,
+  });
+}
+
 export default function CartDrawer() {
   const { items, isOpen, isMounted, closeCart, removeItem, updateQuantity, total } = useCart();
+
+  const shippingCost = total >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_COST;
+  const amountUntilFreeShipping = Math.max(0, FREE_SHIPPING_THRESHOLD - total);
+  const finalTotal = total + shippingCost;
 
   const whatsappLink = useMemo(() => {
     const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "33600000000";
@@ -18,16 +32,20 @@ export default function CartDrawer() {
         ).toFixed(0)} €`
     );
 
+    const shippingLine =
+      shippingCost > 0 ? `Livraison : ${formatPrice(shippingCost)} €` : "Livraison : OFFERT";
+
     const message = [
       "Bonjour, je souhaite commander :",
       "",
       ...lines,
       "",
-      `Total : ${total.toFixed(0)} €`,
+      shippingLine,
+      `Total : ${formatPrice(finalTotal)} €`,
     ].join("\n");
 
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-  }, [items, total]);
+  }, [items, shippingCost, finalTotal]);
 
   if (!isMounted) return null;
 
@@ -118,10 +136,30 @@ export default function CartDrawer() {
         </div>
 
         <div className="flex flex-col gap-3 border-t border-zinc-800 px-5 py-4">
-          <div className="flex justify-between text-sm text-zinc-300">
-            <span>Sous-total</span>
-            <span className="font-medium text-white">{total.toFixed(0)} €</span>
-          </div>
+          {items.length > 0 && (
+            <div className="flex flex-col gap-1.5">
+              <div className="flex justify-between text-sm text-zinc-300">
+                <span>Sous-total</span>
+                <span className="font-medium text-white">{formatPrice(total)} €</span>
+              </div>
+              <div className="flex justify-between text-sm text-zinc-300">
+                <span>Livraison</span>
+                <span className="font-medium text-white">
+                  {shippingCost > 0 ? `${formatPrice(shippingCost)} €` : "Offerte"}
+                </span>
+              </div>
+              {shippingCost > 0 && (
+                <p className="text-xs text-zinc-500">
+                  Plus que {formatPrice(amountUntilFreeShipping)} € pour bénéficier de la livraison
+                  offerte !
+                </p>
+              )}
+              <div className="mt-1 flex justify-between border-t border-zinc-800 pt-2 text-sm text-zinc-100">
+                <span className="font-semibold uppercase tracking-wide">Total</span>
+                <span className="font-semibold text-white">{formatPrice(finalTotal)} €</span>
+              </div>
+            </div>
+          )}
           {whatsappLink ? (
             <a
               href={whatsappLink}
