@@ -358,7 +358,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "pantalons",
     price: 95,
-    images: [IMG_PANTS[0], IMG_PANTS[4]],
+    images: ["/images/products/arcteryx-beta-pant-black/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description: "Pantalon softshell stretch quatre voies, renforts déperlants, coupe droite technique.",
   },
