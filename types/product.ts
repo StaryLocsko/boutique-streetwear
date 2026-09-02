@@ -43,10 +43,13 @@ export type BrandId =
   | "rhude"
   | "cdg";
 
+export type BrandUniverse = "sneakers" | "streetwear" | "techwear" | "maroquinerie" | "quiet-luxury";
+
 export interface Brand {
   id: BrandId;
   name: string;
   image: string;
+  universe: BrandUniverse;
 }
 
 export interface Product {

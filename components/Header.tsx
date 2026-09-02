@@ -7,7 +7,7 @@ export default function Header() {
   const { itemCount, openCart } = useCart();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-white/[0.08] bg-[#0c0d10]/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-lg font-semibold tracking-[0.3em] text-white">
@@ -17,7 +17,7 @@ export default function Header() {
             type="button"
             onClick={openCart}
             aria-label="Ouvrir le panier"
-            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-zinc-700 text-zinc-200 transition-colors hover:border-white hover:text-white"
+            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-zinc-200 transition-colors hover:border-white hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

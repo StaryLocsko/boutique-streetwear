@@ -29,10 +29,10 @@ export default function BrandPage({ params }: BrandPageProps) {
     <>
       <Header />
 
-      <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
+      <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="inline-flex w-fit items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-xs font-medium uppercase tracking-wide text-zinc-300 transition-colors hover:border-white hover:text-white"
+          className="inline-flex w-fit items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
         >
           ← Retour aux marques
         </Link>

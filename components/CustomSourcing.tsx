@@ -4,7 +4,7 @@ export default function CustomSourcing() {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <section className="mt-12 overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 px-6 py-10 text-center sm:px-10">
+    <section className="mt-12 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] px-6 py-10 text-center sm:px-10">
       <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
         Tu cherches une pièce spécifique ?
       </h2>

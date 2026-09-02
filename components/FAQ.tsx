@@ -34,9 +34,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="mt-16 border-t border-zinc-800 pt-10">
+    <section id="faq" className="mt-16 border-t border-white/[0.08] pt-10">
       <h2 className="mb-6 text-xl font-semibold text-white">Questions fréquentes</h2>
-      <div className="flex flex-col divide-y divide-zinc-800 border-y border-zinc-800">
+      <div className="flex flex-col divide-y divide-white/[0.08] border-y border-white/[0.08]">
         {FAQ_ITEMS.map((item, index) => {
           const isOpen = openIndex === index;
           return (

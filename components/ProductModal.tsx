@@ -39,7 +39,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
       onClick={onClose}
     >
       <div
-        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-y-auto rounded-t-2xl border border-zinc-800 bg-zinc-950 sm:grid sm:grid-cols-2 sm:rounded-2xl"
+        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-y-auto rounded-t-2xl border border-white/[0.08] bg-[#0c0d10] sm:grid sm:grid-cols-2 sm:rounded-2xl"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="relative aspect-square sm:aspect-auto sm:h-full">
@@ -54,7 +54,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Fermer"
-            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-zinc-950/80 text-white sm:hidden"
+            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#0c0d10]/80 text-white sm:hidden"
           >
             ✕
           </button>
@@ -65,13 +65,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Fermer"
-            className="absolute right-4 top-4 hidden h-8 w-8 items-center justify-center rounded-full border border-zinc-700 text-zinc-300 transition-colors hover:border-white hover:text-white sm:flex"
+            className="absolute right-4 top-4 hidden h-8 w-8 items-center justify-center rounded-full border border-white/15 text-zinc-300 transition-colors hover:border-white hover:text-white sm:flex"
           >
             ✕
           </button>
 
           {product.badge && (
-            <span className="w-fit rounded-full bg-white/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-zinc-300">
+            <span className="w-fit rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
               {product.badge}
             </span>
           )}
@@ -84,10 +84,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <p className="text-sm leading-relaxed text-zinc-400">{product.description}</p>
 
           <div>
-            <p className="mb-2 text-xs font-medium uppercase tracking-wide text-zinc-400">
+            <p className="mb-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-400">
               Taille
               {sizeError && (
-                <span className="ml-2 normal-case text-red-400">Sélection requise</span>
+                <span className="ml-2 normal-case tracking-normal text-red-400">Sélection requise</span>
               )}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -99,10 +99,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                     setSelectedSize(size);
                     setSizeError(false);
                   }}
-                  className={`min-w-[3rem] rounded-lg border px-3 py-2 text-sm transition-colors ${
+                  className={`flex h-11 min-w-11 items-center justify-center rounded-lg border px-2 text-sm transition-colors ${
                     selectedSize === size
                       ? "border-white bg-white text-zinc-950"
-                      : "border-zinc-700 text-zinc-200 hover:border-zinc-400"
+                      : "border-white/15 text-zinc-200 hover:border-white/40"
                   }`}
                 >
                   {size}
@@ -114,7 +114,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <button
             type="button"
             onClick={handleAddToCart}
-            className="mt-2 w-full rounded-full bg-white py-3 text-sm font-semibold uppercase tracking-wide text-zinc-950 transition-colors hover:bg-zinc-200"
+            className="mt-2 w-full rounded-xl bg-white py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-950 transition-colors hover:bg-zinc-200"
           >
             Ajouter au panier
           </button>
