@@ -326,7 +326,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 110,
-    images: [IMG_VESTES[1], IMG_VESTES[4]],
+    images: ["/images/products/arcteryx-cerium-lt-black/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description: "Duvet 850 traité déperlant, capuche ajustable, ultra compressible pour les nuits fraîches.",
     badge: "Best-seller",
