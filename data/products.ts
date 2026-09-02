@@ -224,7 +224,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
-    images: [IMG_VESTES[2], IMG_VESTES[3]],
+    images: ["/images/products/arcteryx-beta-lt-tatsu/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex légère finition Tatsu Olive, capuche ajustable compatible casque et coutures thermosoudées.",
