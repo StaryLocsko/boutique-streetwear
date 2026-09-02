@@ -304,7 +304,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 140,
-    images: [IMG_VESTES[2], IMG_VESTES[4]],
+    images: ["/images/products/arcteryx-beams-patchwork/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description: "Collaboration Beams x Arc'teryx sur base Beta, patchwork exclusif en édition limitée.",
     badge: "Édition limitée",
