@@ -27,7 +27,7 @@ export default function CartDrawer() {
 
     const lines = items.map(
       (item) =>
-        `• ${item.product.name} — Taille ${item.size} × ${item.quantity} — ${(
+        `• ${item.product.name} [Ref: ${item.product.id}] — Taille ${item.size} × ${item.quantity} — ${(
           item.product.price * item.quantity
         ).toFixed(0)} €`
     );
