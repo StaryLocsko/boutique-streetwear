@@ -3,7 +3,7 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 
 const STORAGE_KEY = "noir-gatekeeper-access";
-const ACCESS_CODE = process.env.NEXT_PUBLIC_GATEKEEPER_CODE || "NOIR2026";
+const ACCESS_CODE = process.env.NEXT_PUBLIC_GATEKEEPER_CODE || "NOIR9482";
 
 export default function Gatekeeper({ children }: { children: ReactNode }) {
   const [unlocked, setUnlocked] = useState<boolean | null>(null);

@@ -199,10 +199,10 @@ const IMG_CDG = [
 ];
 
 export const products: Product[] = [
-  // --- Arc'teryx (collection Shark Breeder / TZ Batch) ---
+  // --- Arc (collection Shark Breeder / TZ Batch) ---
   {
     id: "arcteryx-beta-lt-black",
-    name: "Arc'teryx Beta LT Jacket - Black",
+    name: "Beta LT Jacket - Black",
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
@@ -220,7 +220,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beta-lt-tatsu",
-    name: "Arc'teryx Beta LT Jacket - Tatsu Olive",
+    name: "Beta LT Jacket - Tatsu Olive",
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
@@ -231,7 +231,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beta-lt-pixelgray",
-    name: "Arc'teryx Beta LT Jacket - Pixel Gray",
+    name: "Beta LT Jacket - Pixel Gray",
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
@@ -242,7 +242,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beta-lt-lucent",
-    name: "Arc'teryx Beta LT Jacket - Lucent Blue",
+    name: "Beta LT Jacket - Lucent Blue",
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
@@ -254,7 +254,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beta-lt-pink",
-    name: "Arc'teryx Beta LT Jacket - Lucky Fans Pink",
+    name: "Beta LT Jacket - Lucky Fans Pink",
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
@@ -266,7 +266,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-alpha-sv-24k",
-    name: "Arc'teryx Alpha SV 6th Gen - 24K Black Gold",
+    name: "Alpha SV 6th Gen - 24K Black Gold",
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
@@ -278,7 +278,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-alpha-sv-orca",
-    name: "Arc'teryx Alpha SV 6th Gen - Orca Black/White",
+    name: "Alpha SV 6th Gen - Orca Black/White",
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
@@ -289,7 +289,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-alpha-sv-forage",
-    name: "Arc'teryx Alpha SV 6th Gen - Forage Grey",
+    name: "Alpha SV 6th Gen - Forage Grey",
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
@@ -300,18 +300,18 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beams-patchwork",
-    name: "Beams x Arc'teryx Beta Jacket - Patchwork",
+    name: "Beams x Arc Beta Jacket - Patchwork",
     brandId: "arcteryx",
     category: "vestes",
     price: 140,
     images: ["/images/products/arcteryx-beams-patchwork/1.jpg"],
     sizes: SIZES_ARCTERYX,
-    description: "Collaboration Beams x Arc'teryx sur base Beta, patchwork exclusif en édition limitée.",
+    description: "Collaboration Beams x Arc sur base Beta, patchwork exclusif en édition limitée.",
     badge: "Édition limitée",
   },
   {
     id: "arcteryx-atom-hoody-black",
-    name: "Arc'teryx Atom Hoody 2.0 - Black",
+    name: "Atom Hoody 2.0 - Black",
     brandId: "arcteryx",
     category: "sweats",
     price: 90,
@@ -322,7 +322,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-cerium-lt-black",
-    name: "Arc'teryx Cerium LT Hoody Doudoune - Black",
+    name: "Cerium LT Hoody Doudoune - Black",
     brandId: "arcteryx",
     category: "vestes",
     price: 110,
@@ -333,7 +333,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-macai-black",
-    name: "Arc'teryx Macai Jacket - Black",
+    name: "Macai Jacket - Black",
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
@@ -344,7 +344,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-gamma-mx-black",
-    name: "Arc'teryx Gamma MX Softshell Jacket - Black",
+    name: "Gamma MX Softshell Jacket - Black",
     brandId: "arcteryx",
     category: "vestes",
     price: 105,
@@ -354,7 +354,7 @@ export const products: Product[] = [
   },
   {
     id: "arcteryx-beta-pant-black",
-    name: "Arc'teryx Beta Pant - Black",
+    name: "Beta Pant - Black",
     brandId: "arcteryx",
     category: "pantalons",
     price: 95,
