@@ -165,4 +165,49 @@ export const brands: Brand[] = [
     name: "Lacoste",
     image: unsplash("1700221412669-2449f347757f"), // texture sombre, wordmark
   },
+  {
+    id: "balenciaga",
+    name: "Balenciaga",
+    image: unsplash("1666687848426-d0b8c0e9cf58"), // devanture de boutique
+  },
+  {
+    id: "salomon",
+    name: "Salomon",
+    image: unsplash("1760465809553-ddcbe4bb4753"), // XT-6, gros plan sur sentier
+  },
+  {
+    id: "margiela",
+    name: "Maison Margiela",
+    image: unsplash("1620989928625-08536e746255"), // Replica GAT, en main
+  },
+  {
+    id: "yeezy",
+    name: "Yeezy",
+    image: unsplash("1626771652942-93d834f3d1fd"), // Yeezy Slide sur boîte
+  },
+  {
+    id: "loro-piana",
+    name: "Loro Piana",
+    image: unsplash("1576792741377-eb0f4f6d1a47"), // mocassin daim, vue du dessus
+  },
+  {
+    id: "essentials",
+    name: "Essentials",
+    image: unsplash("1666443762044-c6aa2a306cae"), // hoodie boxy, ambiance urbaine
+  },
+  {
+    id: "palace",
+    name: "Palace",
+    image: unsplash("1667473569417-79b7f75e68cc"), // skatepark, culture street UK
+  },
+  {
+    id: "rhude",
+    name: "Rhude",
+    image: unsplash("1716186108018-3323500fe8a5"), // tee motorsport, ambiance course
+  },
+  {
+    id: "cdg",
+    name: "Comme des Garçons",
+    image: unsplash("1609252546279-1dff6542315b"), // Converse PLAY cœur, porté
+  },
 ];

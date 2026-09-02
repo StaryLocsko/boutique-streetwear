@@ -32,7 +32,16 @@ export type BrandId =
   | "moncler"
   | "canada-goose"
   | "ralph-lauren"
-  | "lacoste";
+  | "lacoste"
+  | "balenciaga"
+  | "salomon"
+  | "margiela"
+  | "yeezy"
+  | "loro-piana"
+  | "essentials"
+  | "palace"
+  | "rhude"
+  | "cdg";
 
 export interface Brand {
   id: BrandId;
