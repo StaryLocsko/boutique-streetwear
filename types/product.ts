@@ -1,4 +1,4 @@
-export type ProductCategory = "vestes" | "sweats" | "pantalons" | "accessoires";
+export type ProductCategory = "vestes" | "sweats" | "pantalons" | "accessoires" | "sneakers";
 
 export type BrandId =
   | "arcteryx"
@@ -8,7 +8,20 @@ export type BrandId =
   | "carhartt-wip"
   | "supreme"
   | "trapstar"
-  | "stussy";
+  | "stussy"
+  | "jordan"
+  | "new-balance"
+  | "asics"
+  | "on-running"
+  | "nike-tn"
+  | "adidas"
+  | "dior"
+  | "louis-vuitton"
+  | "syna-world"
+  | "denim-tears"
+  | "hellstar"
+  | "stone-island"
+  | "under-armour";
 
 export interface Brand {
   id: BrandId;
