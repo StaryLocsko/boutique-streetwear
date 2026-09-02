@@ -293,7 +293,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
-    images: [IMG_VESTES[4], IMG_VESTES[1]],
+    images: ["/images/products/arcteryx-alpha-sv-forage/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex Pro 6e génération finition Forage Grey, la plus robuste de la gamme pour l'alpinisme exigeant.",
