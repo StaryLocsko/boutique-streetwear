@@ -4,11 +4,11 @@ export default function CustomSourcing() {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <section className="mt-12 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02] px-6 py-10 text-center sm:px-10">
-      <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+    <section className="mt-12 overflow-hidden rounded-2xl border border-zinc-200/80 bg-white px-6 py-10 text-center shadow-[0_2px_12px_rgba(0,0,0,0.04)] sm:px-10">
+      <h2 className="text-xl font-semibold tracking-tight text-zinc-950 sm:text-2xl">
         Tu cherches une pièce spécifique ?
       </h2>
-      <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-zinc-400">
+      <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-zinc-600">
         Une taille, un coloris ou un modèle précis non listé ici ? Envoie-nous la photo et la
         taille sur WhatsApp, on te trouve la pièce sous 24h.
       </p>

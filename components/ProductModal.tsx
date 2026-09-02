@@ -35,14 +35,14 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-0 sm:items-center sm:p-4"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-zinc-950/40 p-0 sm:items-center sm:p-4"
       onClick={onClose}
     >
       <div
-        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-y-auto rounded-t-2xl border border-white/[0.08] bg-[#0c0d10] sm:grid sm:grid-cols-2 sm:rounded-2xl"
+        className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-y-auto rounded-t-2xl border border-zinc-200/80 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] sm:grid sm:grid-cols-2 sm:rounded-2xl"
         onClick={(event) => event.stopPropagation()}
       >
-        <div className="relative aspect-square sm:aspect-auto sm:h-full">
+        <div className="relative aspect-square bg-zinc-100 sm:aspect-auto sm:h-full">
           <Image
             src={product.images[0]}
             alt={product.name}
@@ -54,7 +54,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Fermer"
-            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#0c0d10]/80 text-white sm:hidden"
+            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-zinc-950 shadow-sm sm:hidden"
           >
             ✕
           </button>
@@ -65,29 +65,29 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Fermer"
-            className="absolute right-4 top-4 hidden h-8 w-8 items-center justify-center rounded-full border border-white/15 text-zinc-300 transition-colors hover:border-white hover:text-white sm:flex"
+            className="absolute right-4 top-4 hidden h-8 w-8 items-center justify-center rounded-full border border-zinc-300 text-zinc-600 transition-colors hover:border-zinc-950 hover:text-zinc-950 sm:flex"
           >
             ✕
           </button>
 
           {product.badge && (
-            <span className="w-fit rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
+            <span className="w-fit rounded-full bg-zinc-100 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-zinc-600">
               {product.badge}
             </span>
           )}
 
           <div>
-            <h2 className="text-xl font-semibold text-white">{product.name}</h2>
-            <p className="mt-1 text-lg text-zinc-300">{product.price.toFixed(0)} €</p>
+            <h2 className="text-xl font-semibold text-zinc-950">{product.name}</h2>
+            <p className="mt-1 text-lg text-zinc-700">{product.price.toFixed(0)} €</p>
           </div>
 
-          <p className="text-sm leading-relaxed text-zinc-400">{product.description}</p>
+          <p className="text-sm leading-relaxed text-zinc-600">{product.description}</p>
 
           <div>
-            <p className="mb-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-400">
+            <p className="mb-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-500">
               Taille
               {sizeError && (
-                <span className="ml-2 normal-case tracking-normal text-red-400">Sélection requise</span>
+                <span className="ml-2 normal-case tracking-normal text-red-500">Sélection requise</span>
               )}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -101,8 +101,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   }}
                   className={`flex h-11 min-w-11 items-center justify-center rounded-lg border px-2 text-sm transition-colors ${
                     selectedSize === size
-                      ? "border-white bg-white text-zinc-950"
-                      : "border-white/15 text-zinc-200 hover:border-white/40"
+                      ? "border-zinc-950 bg-zinc-950 text-white"
+                      : "border-zinc-300 bg-white text-zinc-700 hover:border-zinc-950"
                   }`}
                 >
                   {size}
@@ -114,7 +114,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <button
             type="button"
             onClick={handleAddToCart}
-            className="mt-2 w-full rounded-xl bg-white py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-950 transition-colors hover:bg-zinc-200"
+            className="mt-2 w-full rounded-xl bg-zinc-950 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-zinc-800"
           >
             Ajouter au panier
           </button>

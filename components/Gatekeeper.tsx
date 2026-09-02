@@ -39,19 +39,14 @@ export default function Gatekeeper({ children }: { children: ReactNode }) {
   }
 
   if (unlocked === null) {
-    return <div className="min-h-screen bg-[#0c0d10]" />;
+    return <div className="min-h-screen bg-[#f6f6f5]" />;
   }
 
   if (!unlocked) {
     return (
-      <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#0c0d10] px-6">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-[560px] bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(210,225,255,0.06),transparent_70%)]"
-        />
-
-        <div className="relative w-full max-w-sm text-center">
-          <p className="text-3xl font-semibold tracking-[0.4em] text-white">NOIR</p>
+      <div className="flex min-h-screen flex-col items-center justify-center bg-[#f6f6f5] px-6">
+        <div className="w-full max-w-sm text-center">
+          <p className="text-3xl font-semibold tracking-[0.4em] text-zinc-950">NOIR</p>
           <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.3em] text-zinc-500">
             Private Showroom &amp; Sourcing
           </p>
@@ -67,17 +62,17 @@ export default function Gatekeeper({ children }: { children: ReactNode }) {
               placeholder="Code d'accès"
               aria-label="Code d'accès"
               autoFocus
-              className="w-full rounded-xl border border-white/[0.08] bg-white/[0.03] px-5 py-3.5 text-center text-sm uppercase tracking-widest text-white placeholder:text-zinc-600 placeholder:normal-case transition-colors focus:border-white/40 focus:bg-white/[0.05] focus:outline-none focus:ring-4 focus:ring-white/5"
+              className="w-full rounded-xl border border-zinc-300 bg-white px-5 py-3.5 text-center text-sm uppercase tracking-widest text-zinc-950 placeholder:text-zinc-400 placeholder:normal-case transition-colors focus:border-zinc-950 focus:outline-none"
             />
             <button
               type="submit"
-              className="w-full rounded-xl bg-white py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-950 transition-colors hover:bg-zinc-200"
+              className="w-full rounded-xl bg-zinc-950 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-zinc-800"
             >
               Accéder au catalogue
             </button>
           </form>
 
-          <p className="mt-4 h-4 text-xs text-red-400">
+          <p className="mt-4 h-4 text-xs text-red-500">
             {error ? "Code incorrect. Réessaie." : ""}
           </p>
         </div>

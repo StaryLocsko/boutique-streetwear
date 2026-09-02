@@ -29,19 +29,19 @@ export default function BrandPage({ params }: BrandPageProps) {
     <>
       <Header />
 
-      <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
+      <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="inline-flex w-fit items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+          className="inline-flex w-fit items-center gap-2 rounded-full border border-zinc-200/80 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.15em] text-zinc-600 shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-colors hover:border-zinc-400 hover:text-zinc-950"
         >
           ← Retour aux marques
         </Link>
 
         <section className="mb-10 mt-6">
-          <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">
             {brand.name}
           </h1>
-          <p className="mt-2 text-sm text-zinc-400">
+          <p className="mt-2 text-sm text-zinc-600">
             {brandProducts.length} article{brandProducts.length > 1 ? "s" : ""} disponible
             {brandProducts.length > 1 ? "s" : ""}
           </p>

@@ -7,17 +7,17 @@ export default function Header() {
   const { itemCount, openCart } = useCart();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/[0.08] bg-[#0c0d10]/80 backdrop-blur-md">
+    <header className="sticky top-0 z-30 border-b border-zinc-200/80 bg-white/80 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-lg font-semibold tracking-[0.3em] text-white">
+          <Link href="/" className="text-lg font-semibold tracking-[0.3em] text-zinc-950">
             NOIR
           </Link>
           <button
             type="button"
             onClick={openCart}
             aria-label="Ouvrir le panier"
-            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-zinc-200 transition-colors hover:border-white hover:text-white"
+            className="relative flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 text-zinc-700 transition-colors hover:border-zinc-950 hover:text-zinc-950"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Header() {
               />
             </svg>
             {itemCount > 0 && (
-              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[11px] font-semibold text-zinc-950">
+              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-zinc-950 text-[11px] font-semibold text-white">
                 {itemCount}
               </span>
             )}
