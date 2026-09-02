@@ -1,18 +1,18 @@
-﻿ID,Marque,Nom du produit,Categorie,Prix de vente,Tailles,Lien Fournisseur,Vendeur ou Batch,Prix Achat Usine,Marge Nette
-arcteryx-beta-lt-black,Arc'teryx,Arc'teryx Beta LT Jacket - Black,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
-arcteryx-beta-lt-tatsu,Arc'teryx,Arc'teryx Beta LT Jacket - Tatsu Olive,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
-arcteryx-beta-lt-pixelgray,Arc'teryx,Arc'teryx Beta LT Jacket - Pixel Gray,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
-arcteryx-beta-lt-lucent,Arc'teryx,Arc'teryx Beta LT Jacket - Lucent Blue,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
-arcteryx-beta-lt-pink,Arc'teryx,Arc'teryx Beta LT Jacket - Lucky Fans Pink,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
-arcteryx-alpha-sv-24k,Arc'teryx,Arc'teryx Alpha SV 6th Gen - 24K Black Gold,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
-arcteryx-alpha-sv-orca,Arc'teryx,Arc'teryx Alpha SV 6th Gen - Orca Black/White,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
-arcteryx-alpha-sv-forage,Arc'teryx,Arc'teryx Alpha SV 6th Gen - Forage Grey,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
-arcteryx-beams-patchwork,Arc'teryx,Beams x Arc'teryx Beta Jacket - Patchwork,vestes,140,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,340 ¥ (~45 €),95
-arcteryx-atom-hoody-black,Arc'teryx,Arc'teryx Atom Hoody 2.0 - Black,sweats,90,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,220 ¥ (~29 €),61
-arcteryx-cerium-lt-black,Arc'teryx,Arc'teryx Cerium LT Hoody Doudoune - Black,vestes,110,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,350 ¥ (~46 €),64
-arcteryx-macai-black,Arc'teryx,Arc'teryx Macai Jacket - Black,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
-arcteryx-gamma-mx-black,Arc'teryx,Arc'teryx Gamma MX Softshell Jacket - Black,vestes,105,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),68
-arcteryx-beta-pant-black,Arc'teryx,Arc'teryx Beta Pant - Black,pantalons,95,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,290 ¥ (~38 €),57
+ID,Marque,Nom du produit,Categorie,Prix de vente,Tailles,Lien Fournisseur,Vendeur ou Batch,Prix Achat Usine,Marge Nette
+arcteryx-beta-lt-black,Arc,Arc Beta LT Jacket - Black,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
+arcteryx-beta-lt-tatsu,Arc,Arc Beta LT Jacket - Tatsu Olive,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
+arcteryx-beta-lt-pixelgray,Arc,Arc Beta LT Jacket - Pixel Gray,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
+arcteryx-beta-lt-lucent,Arc,Arc Beta LT Jacket - Lucent Blue,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
+arcteryx-beta-lt-pink,Arc,Arc Beta LT Jacket - Lucky Fans Pink,vestes,120,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),83
+arcteryx-alpha-sv-24k,Arc,Arc Alpha SV 6th Gen - 24K Black Gold,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
+arcteryx-alpha-sv-orca,Arc,Arc Alpha SV 6th Gen - Orca Black/White,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
+arcteryx-alpha-sv-forage,Arc,Arc Alpha SV 6th Gen - Forage Grey,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
+arcteryx-beams-patchwork,Arc,Beams x Arc Beta Jacket - Patchwork,vestes,140,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,340 ¥ (~45 €),95
+arcteryx-atom-hoody-black,Arc,Arc Atom Hoody 2.0 - Black,sweats,90,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,220 ¥ (~29 €),61
+arcteryx-cerium-lt-black,Arc,Arc Cerium LT Hoody Doudoune - Black,vestes,110,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,350 ¥ (~46 €),64
+arcteryx-macai-black,Arc,Arc Macai Jacket - Black,vestes,155,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,400 ¥ (~53 €),102
+arcteryx-gamma-mx-black,Arc,Arc Gamma MX Softshell Jacket - Black,vestes,105,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,280 ¥ (~37 €),68
+arcteryx-beta-pant-black,Arc,Arc Beta Pant - Black,pantalons,95,S / M / L / XL / XXL,,Shark Breeder - TZ Batch,290 ¥ (~38 €),57
 pantalon-corteiz-cargo,Corteiz,Corteiz Cargo Guerillaz,pantalons,75,28 / 30 / 32 / 34 / 36,,,,
 sweat-corteiz-hoodie,Corteiz,Corteiz Hoodie,sweats,80,XS / S / M / L / XL,,,,
 pantalon-corteiz-4starz,Corteiz,Corteiz 4Starz Cargo,pantalons,85,28 / 30 / 32 / 34 / 36,,,,
