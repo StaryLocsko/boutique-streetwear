@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import Gatekeeper from "@/components/Gatekeeper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NOIR — Boutique Streetwear",
   description: "Pièces streetwear sélectionnées : vestes, sweats, sneakers et accessoires.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -26,7 +31,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-zinc-950 text-zinc-100" suppressHydrationWarning>
-        <CartProvider>{children}</CartProvider>
+        <CartProvider>
+          <Gatekeeper>{children}</Gatekeeper>
+        </CartProvider>
       </body>
     </html>
   );
