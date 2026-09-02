@@ -315,7 +315,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "sweats",
     price: 90,
-    images: [IMG_SWEATS[0], IMG_SWEATS[3]],
+    images: ["/images/products/arcteryx-atom-hoody-black/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Isolant synthétique Coreloft, capuche ajustée et chambres thermiques, la doublure idéale entre deux couches techniques.",
