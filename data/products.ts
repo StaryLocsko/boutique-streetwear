@@ -206,7 +206,13 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
-    images: [IMG_VESTES[0], IMG_VESTES[1]],
+    images: [
+      "/images/products/arcteryx-beta-lt-black/1.jpg",
+      "/images/products/arcteryx-beta-lt-black/2.jpg",
+      "/images/products/arcteryx-beta-lt-black/3.jpg",
+      "/images/products/arcteryx-beta-lt-black/4.jpg",
+      "/images/products/arcteryx-beta-lt-black/5.jpg",
+    ],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex légère finition Black, capuche ajustable compatible casque et coutures thermosoudées.",
