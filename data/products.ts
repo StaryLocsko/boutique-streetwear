@@ -332,14 +332,15 @@ export const products: Product[] = [
     badge: "Best-seller",
   },
   {
-    id: "arcteryx-cerium-vest-black",
-    name: "Arc'teryx Cerium Vest Doudoune sans manches - Black",
+    id: "arcteryx-macai-black",
+    name: "Arc'teryx Macai Jacket - Black",
     brandId: "arcteryx",
     category: "vestes",
-    price: 85,
-    images: [IMG_VESTES[3], IMG_VESTES[0]],
+    price: 155,
+    images: ["/images/products/arcteryx-macai-black/1.jpg"],
     sizes: SIZES_ARCTERYX,
-    description: "Doudoune sans manches en duvet 850, coupe ajustée à superposer sous une coquille.",
+    description:
+      "Veste technique haut de gamme combinant duvet d'oie européen et membrane GORE-TEX imperméable et coupe-vent. Conçue pour une isolation thermique maximale dans des conditions hivernales extrêmes.",
   },
   {
     id: "arcteryx-gamma-mx-black",
