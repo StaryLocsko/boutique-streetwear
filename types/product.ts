@@ -21,7 +21,18 @@ export type BrandId =
   | "denim-tears"
   | "hellstar"
   | "stone-island"
-  | "under-armour";
+  | "under-armour"
+  | "gucci"
+  | "goyard"
+  | "prada"
+  | "chrome-hearts"
+  | "bape"
+  | "gallery-dept"
+  | "palm-angels"
+  | "moncler"
+  | "canada-goose"
+  | "ralph-lauren"
+  | "lacoste";
 
 export interface Brand {
   id: BrandId;

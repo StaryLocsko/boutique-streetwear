@@ -110,4 +110,59 @@ export const brands: Brand[] = [
     name: "Under Armour",
     image: unsplash("1632621525252-26ed288b4352"), // maille technique sportive
   },
+  {
+    id: "gucci",
+    name: "Gucci",
+    image: unsplash("1717145687863-157e7195a295"), // casquette GG Canvas, gros plan
+  },
+  {
+    id: "goyard",
+    name: "Goyard",
+    image: unsplash("1590326815549-841ec6e7e01b"), // malle en cuir, fermoir laiton
+  },
+  {
+    id: "prada",
+    name: "Prada",
+    image: unsplash("1607085941350-7d46c83aa9f5"), // triangle logo, gros plan
+  },
+  {
+    id: "chrome-hearts",
+    name: "Chrome Hearts",
+    image: unsplash("1669303276440-ac19a8f5ea83"), // croix argentée, ambiance sombre
+  },
+  {
+    id: "bape",
+    name: "Bape",
+    image: unsplash("1722396433943-7024a4d1f09f"), // capuche Shark camo
+  },
+  {
+    id: "gallery-dept",
+    name: "Gallery Dept",
+    image: unsplash("1763256649578-0529e8e52e0a"), // tee Paint Splatter
+  },
+  {
+    id: "palm-angels",
+    name: "Palm Angels",
+    image: unsplash("1643622744071-6aa7644a0ffd"), // veste survêtement bande latérale
+  },
+  {
+    id: "moncler",
+    name: "Moncler",
+    image: unsplash("1637623378142-748287e92fc9"), // texture doudoune matelassée sombre
+  },
+  {
+    id: "canada-goose",
+    name: "Canada Goose",
+    image: unsplash("1758172071457-00799a535102"), // capuche parka rouge, écusson
+  },
+  {
+    id: "ralph-lauren",
+    name: "Ralph Lauren",
+    image: unsplash("1572539188687-4113c4b74e8f"), // veste, patch pony brodé
+  },
+  {
+    id: "lacoste",
+    name: "Lacoste",
+    image: unsplash("1700221412669-2449f347757f"), // texture sombre, wordmark
+  },
 ];
