@@ -348,7 +348,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 105,
-    images: [IMG_VESTES[2], IMG_VESTES[1]],
+    images: ["/images/products/arcteryx-gamma-mx-black/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description: "Softshell résistant au vent et à l'abrasion, coupe technique pour un usage quotidien polyvalent.",
   },
