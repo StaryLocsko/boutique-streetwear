@@ -258,7 +258,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
-    images: [IMG_VESTES[3], IMG_VESTES[4]],
+    images: ["/images/products/arcteryx-beta-lt-pink/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex légère finition Lucky Fans Pink, coloris rare en édition limitée.",
