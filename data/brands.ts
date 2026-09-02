@@ -10,7 +10,7 @@ export const brands: Brand[] = [
   {
     id: "arcteryx",
     name: "Arc",
-    image: unsplash("1523381210434-271e8be1f52b"), // vestes sur portant, fond clair
+    image: "/images/brands/arc.jpg",
     universe: "techwear",
   },
   {
