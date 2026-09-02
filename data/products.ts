@@ -270,7 +270,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 155,
-    images: [IMG_VESTES[0], IMG_VESTES[2]],
+    images: ["/images/products/arcteryx-alpha-sv-24k/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex Pro 6e génération finition 24K Black Gold, la plus robuste de la gamme pour l'alpinisme exigeant.",
