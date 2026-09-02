@@ -235,7 +235,7 @@ export const products: Product[] = [
     brandId: "arcteryx",
     category: "vestes",
     price: 120,
-    images: [IMG_VESTES[4], IMG_VESTES[0]],
+    images: ["/images/products/arcteryx-beta-lt-pixelgray/1.jpg"],
     sizes: SIZES_ARCTERYX,
     description:
       "Coquille Gore-Tex légère finition Pixel Gray, capuche ajustable compatible casque et coutures thermosoudées.",
